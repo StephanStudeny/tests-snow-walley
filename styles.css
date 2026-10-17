@@ -302,6 +302,11 @@ ul { list-style: none; margin: 0; padding: 0; }
   transition: opacity .35s var(--ease), transform .35s var(--ease), background-color .25s, box-shadow .25s;
 }
 .tour.is-active .tour__btn { opacity: 1; transform: none; pointer-events: auto; }
+/* description shows only on the active row, like the button (mobile keeps it visible) */
+@media (min-width: 901px) {
+  .tour__desc { opacity: 0; transform: translateY(8px); transition: opacity .35s var(--ease), transform .35s var(--ease); }
+  .tour.is-active .tour__desc { opacity: 1; transform: none; }
+}
 
 .tours__more { display: flex; justify-content: center; padding: 56px var(--margin) 0; }
 
