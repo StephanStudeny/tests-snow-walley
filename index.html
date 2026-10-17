@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Снежная Долина — путешествия на Камчатку</title>
+  <meta name="description" content="Снежная Долина объединяет программу, размещение, питание, транспорт и сопровождение в одном путешествии.">
+  <link rel="preload" href="assets/img/hero-poster.webp" as="image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Главный экран">
+    <div class="hero__media" aria-hidden="true">
+      <video class="hero__video" src="assets/video/hero.mp4" poster="assets/img/hero-poster.webp"
+             autoplay muted loop playsinline preload="auto"></video>
+      <div class="hero__grain"></div>
+      <div class="hero__shade"></div>
+      <div class="hero__shade-top"></div>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mnav" id="mnav" aria-label="Меню">
+      <nav class="mnav__links">
+        <a href="#tours">Туры</a>
+        <a href="#">О компании</a>
+        <a href="#">Корпоративным клиентам</a>
+        <a href="#">Медиа</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <div class="mnav__foot">
+        <a class="mnav__phone" href="tel:+79250533119">+7 (925) 053-31-19</a>
+        <a href="#" class="btn btn--yellow">Подобрать путешествие</a>
+      </div>
+    </div>
+
+    <header class="header">
+      <a class="header__logo" href="#" aria-label="Снежная Долина — на главную">
+        <img src="assets/icons/logo.svg" width="231" height="32" alt="Снежная Долина">
+      </a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a href="#tours">Туры</a>
+        <a href="#">О компании</a>
+        <a href="#">Корпоративным клиентам</a>
+        <a href="#">Медиа</a>
+        <a href="#">Контакты</a>
+        <a href="tel:+79250533119" class="header__phone">+7 (925) 053-31-19</a>
+      </nav>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mnav">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div class="hero__body wrap">
+      <div class="hero__text">
+        <h1 class="hero__title">Путешествия на&nbsp;Камчатку, <br>продуманные до&nbsp;мелочей</h1>
+        <p class="hero__lead">Снежная Долина объединяет программу, размещение, питание, транспорт и&nbsp;сопровождение в&nbsp;одном путешествии.</p>
+      </div>
+
+      <form class="inquiry" onsubmit="return false">
+        <button type="button" class="inquiry__field">
+          <span class="inquiry__label">Даты поездки</span>
+          <span class="inquiry__value">Выберите даты</span>
+          <img src="assets/icons/calendar.svg" width="24" height="24" alt="">
+        </button>
+        <button type="button" class="inquiry__field">
+          <span class="inquiry__label">Проживание</span>
+          <span class="inquiry__value">Выберите место</span>
+          <img src="assets/icons/chevron-down.svg" width="24" height="24" alt="">
+        </button>
+        <button type="button" class="inquiry__field">
+          <span class="inquiry__label">Услуги</span>
+          <span class="inquiry__value">Выберите нужные</span>
+          <img src="assets/icons/chevron-down.svg" width="24" height="24" alt="">
+        </button>
+        <button type="button" class="inquiry__field">
+          <span class="inquiry__label">Состав группы</span>
+          <span class="inquiry__value">Сколько человек</span>
+          <img src="assets/icons/chevron-down.svg" width="24" height="24" alt="">
+        </button>
+        <button type="submit" class="inquiry__submit">
+          Подобрать путешествие
+          <img src="assets/icons/arrow.svg" width="20" height="20" alt="">
+        </button>
+      </form>
+    </div>
+
+    <img class="hero__edge" src="assets/icons/edge.svg" width="2068" height="110" alt="" aria-hidden="true">
+  </section>
+
+  <main>
+    <!-- WHAT'S INCLUDED -->
+    <section class="included wrap" aria-labelledby="included-title">
+      <div class="section-head reveal">
+        <h2 id="included-title" class="display">Что входит в&nbsp;организацию</h2>
+        <p class="section-head__lead">Один подрядчик на&nbsp;всё путешествие: <br>от&nbsp;маршрута и&nbsp;вертолёта до&nbsp;шале и&nbsp;гида на&nbsp;месте</p>
+      </div>
+
+      <div class="bento">
+        <a href="#" class="tile tile--tall reveal">
+          <img class="tile__img" src="assets/img/tile-1.webp" alt="Лыжник на склоне" loading="lazy">
+          <span class="tile__blur" aria-hidden="true"></span>
+          <span class="tile__text">
+            <span class="tile__copy">
+              <span class="tile__title">Программа и&nbsp;маршрут</span>
+              <span class="tile__desc">Хели-ски, фрирайд, ски-тур, снегоходы, вертолётные экскурсии к&nbsp;вулканам, летние программы и&nbsp;Курилы.</span>
+            </span>
+            <img class="tile__arrow" src="assets/icons/arrow-ur.svg" width="120" height="120" alt="">
+          </span>
+          <span class="tile__stat">
+            <span class="tile__stat-num">с&nbsp;1995</span>
+            <span class="tile__stat-label">Heliski-программы</span>
+          </span>
+        </a>
+
+        <div class="bento__col">
+          <a href="#" class="tile tile--wide reveal">
+            <img class="tile__img tile__img--flip" src="assets/img/tile-2.webp" alt="Вертолёт над горами" loading="lazy">
+            <span class="tile__blur" aria-hidden="true"></span>
+            <span class="tile__text">
+              <span class="tile__copy">
+                <span class="tile__title">Транспорт</span>
+                <span class="tile__desc">Вертолёты с&nbsp;собственной площадки, снегоходы, квадроциклы и&nbsp;вездеходы.</span>
+              </span>
+              <img class="tile__arrow" src="assets/icons/arrow-ur.svg" width="120" height="120" alt="">
+            </span>
+          </a>
+
+          <div class="bento__row">
+            <a href="#" class="tile tile--small reveal">
+              <img class="tile__img tile__img--shift" src="assets/img/tour-3.webp" alt="Шале в зимнем лесу" loading="lazy">
+              <span class="tile__blur" aria-hidden="true"></span>
+              <span class="tile__text tile__text--col">
+                <span class="tile__title">Размещение</span>
+                <span class="tile__desc">Свой экопарк-отель: шале, ресторан, баня, термальные источники.</span>
+              </span>
+              <img class="tile__arrow tile__arrow--bottom" src="assets/icons/arrow-ur.svg" width="120" height="120" alt="">
+            </a>
+
+            <a href="#" class="tile tile--small reveal">
+              <img class="tile__img" src="assets/img/tile-4.webp" alt="Группа на ски-туре" loading="lazy">
+              <span class="tile__blur" aria-hidden="true"></span>
+              <span class="tile__text tile__text--col">
+                <span class="tile__title">Сопровождение</span>
+                <span class="tile__desc">Команда, снаряжение, съёмочная группа.</span>
+              </span>
+              <img class="tile__arrow tile__arrow--bottom" src="assets/icons/arrow-ur.svg" width="120" height="120" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOURS -->
+    <section class="tours" id="tours" aria-labelledby="tours-title">
+      <div class="tours__head wrap reveal">
+        <h2 id="tours-title" class="display">Туры и&nbsp;программы</h2>
+        <div class="tours__sub">
+          <p class="tours__lead">Выберите свой идеальный тур на&nbsp;зиму 2026 и&nbsp;отправляйтесь <br>в&nbsp;путешествие, которое останется в&nbsp;памяти навсегда!</p>
+          <div class="season" role="group" aria-label="Сезон">
+            <button type="button" class="season__btn is-active" aria-pressed="true">Зима</button>
+            <button type="button" class="season__btn" aria-pressed="false">Лето</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tours__stage">
+        <div class="tours__bg" aria-hidden="true">
+          <img class="is-active" src="assets/img/tour-1.webp" alt="">
+          <img src="assets/img/tour-2.webp" alt="" loading="lazy">
+          <img src="assets/img/tour-3.webp" alt="" loading="lazy">
+          <span class="tours__tint"></span>
+        </div>
+
+        <ul class="tours__list wrap">
+          <li class="tour is-active" data-index="0" tabindex="0">
+            <div class="tour__tags">
+              <span>Январь — Март</span><span>Сложность</span><span>Размещение</span><span>Размер группы</span>
+            </div>
+            <div class="tour__row">
+              <h3 class="tour__title">Туры на&nbsp;снегоходах</h3>
+              <p class="tour__desc">Маршрут с&nbsp;проживанием, питанием, перевозками и&nbsp;ежедневной программой.</p>
+              <a href="#" class="btn btn--yellow tour__btn" tabindex="-1">Изучить зимний маршрут</a>
+            </div>
+          </li>
+          <li class="tour" data-index="1" tabindex="0">
+            <div class="tour__tags">
+              <span>Январь — Март</span><span>Сложность</span><span>Размещение</span><span>Размер группы</span>
+            </div>
+            <div class="tour__row">
+              <h3 class="tour__title">Хели-ски</h3>
+              <p class="tour__desc">Вертолётная заброска к&nbsp;вулканам, спуски по&nbsp;нетронутому снегу и&nbsp;виды на&nbsp;Тихий океан. Выберите один день катания, многодневную программу или индивидуальный вертолёт для вашей группы.</p>
+              <a href="#" class="btn btn--yellow tour__btn" tabindex="-1">Изучить зимний маршрут</a>
+            </div>
+          </li>
+          <li class="tour" data-index="2" tabindex="0">
+            <div class="tour__tags">
+              <span>Январь — Март</span><span>Сложность</span><span>Размещение</span><span>Размер группы</span>
+            </div>
+            <div class="tour__row">
+              <h3 class="tour__title">Зимняя программа</h3>
+              <p class="tour__desc">К&nbsp;заснеженным вулканам — на&nbsp;снегоходах, <br>к&nbsp;Тихому океану — за&nbsp;мощью волн, а&nbsp;после — в&nbsp;горячие источники.</p>
+              <a href="#" class="btn btn--yellow tour__btn" tabindex="-1">Изучить зимний маршрут</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tours__more">
+        <a href="#" class="btn btn--outline">Смотреть все туры</a>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final" aria-labelledby="final-title">
+      <div class="final__bg" aria-hidden="true">
+        <img src="assets/img/final-bg.webp" alt="" loading="lazy">
+      </div>
+      <div class="final__skier-clip" aria-hidden="true">
+        <img class="final__skier" src="assets/img/final-skier.webp" alt="" loading="lazy">
+        <img class="final__edge" src="assets/icons/edge.svg" width="2068" height="110" alt="">
+      </div>
+      <div class="final__body wrap reveal">
+        <h2 id="final-title" class="final__title">Камчатка <br>по&nbsp;вашему сценарию</h2>
+        <a href="#" class="btn btn--yellow">Обсудить мою программу</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
